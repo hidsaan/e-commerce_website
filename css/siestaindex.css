@@ -1,0 +1,544 @@
+body
+{
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right, #ddd6f3, #faaca8);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    font-family: 'Roboto', sans-serif;}
+
+.image-box 
+{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom{
+    background-color: #ffbecd;
+}
+.panel{
+    height: 10vh;
+    background-color: palevioletred;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-ops p{
+    display: inline;
+    margin-left: 5px;
+}
+.panel-ops{
+    width: 30%;
+    font-size: 0.85rem;
+}
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.ppan a:hover
+{
+    color: black;
+}
+.custom-carousel {
+        width: 100%; /* Change this to your desired width */
+        
+        margin: 0 auto;  /*Center the carousel horizontally */
+    } 
+
+    /* Customize the carousel image dimensions */
+    .custom-carousel .carousel-item img {
+        max-height: auto; /* Change this to your desired height */
+        object-fit: cover; /* Maintain aspect ratio and cover entire container */
+    }
+
+.image-box:hover
+{
+    border-color: #de5374;
+    box-shadow: 0px 6px 12px #b13b56(0, 0, 0, 0.3); 
+}
+
+.pink
+{
+    background-color: #f392a9;
+}
+.image-box img 
+{
+    max-width: 100%;
+    height: 30vh;
+    width: 22vw;
+    border-radius: 2px;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.lists
+{
+    margin-left: 200px;
+}
+
+.deals img
+{
+    max-width: 100%;
+    height: 35vh; 
+}
+
+.written
+{
+    margin-top: 200px;
+}
+
+.divwithwritten
+{
+    border-right: dotted 1px #ccc;
+}
+
+.carousel img
+{
+    height: 80vh;
+}
+
+.checkk h5
+{
+    color: #d43786;
+}
+
+#categ
+{
+    color: grey;
+    border-bottom: dotted 1px rgba(194, 193, 193, 0.918);
+}
+
+footer {
+    background-color: #de5374;
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 2px;
+}
+
+.footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-section h5 {
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-bottom {
+    background-color: rgb(185, 15, 71);
+    text-align: center;
+    padding: 10px 0;
+}
+.footer-section ul li{
+  display: inline;
+}
+
+.footer-section-one h5
+{
+    text-transform: uppercase ;
+}
+
+.footer-section-one ul
+{
+    list-style: none;
+}
+
+.footer-section-one a {
+    text-decoration: none;
+    color: white;
+}
+
+.emailicon
+{
+    padding-right:10px;
+}
+
+footer a:hover
+{
+    border-bottom: dotted 1px rgb(155, 153, 153);
+}
+
+.categrow
+{
+    margin-left: 7vw;
+}
+
+.panel a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover
+{
+    font-size:18px;
+    text-decoration: underline;
+    transition: box-shadow 0.3s ease;
+}
+
+#login
+{
+    text-align: center;
+    color: rgb(49, 48, 48);
+}
+
+.formlog
+{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#Register
+{
+    margin-bottom: 5vh;
+    border-bottom: dotter 1px rgb(240, 81, 134);
+}
+
+#rev
+{
+    text-align: center;
+}
+
+.cartsi a:hover
+{
+    color: rgb(58, 57, 57);
+}
+
+.login a:hover
+{
+    color: rgb(58, 57, 57);
+}
+
+.shopcateg button
+{
+    text-decoration: none;
+    color: black;
+}
+
+.shopcateg button:hover
+{
+    color: black;
+}
+
+.prodprod img
+{
+    height: 40vh;
+    width: 15vw;
+    margin: 5px;
+}
+
+.product
+{
+    display: block;
+    width: 20vw;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.shopcitip
+{
+    border-bottom: dotted 1px pink;
+    background-color: white;
+}
+
+.shopcitip h5
+{
+    color: rgb(59, 59, 59);
+}
+
+.shopciti
+{
+    border-bottom: dotted 1px pink;
+    background-color: white;
+    text-align: center;
+}
+
+.shopciti h5
+{
+    color: rgb(59, 59, 59);
+}
+
+.carti ul
+{
+    list-style: none;
+}
+
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content img
+{
+    height: 50vh;
+    width: 50vw;
+    border-radius: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Tab buttons container */
+.tab-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Individual tab button */
+.tab-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 0 0;
+    margin-right: 5px;
+}
+
+.shopcateg .tab-button:visited
+{
+    border: 3px solid black;
+}
+
+/* Tab content container */
+.tab-content {
+    display: flex;
+    padding: 2px;
+    border-bottom: dotted 1px rgb(172, 172, 172);
+}
+
+/* Display the selected tab content */
+.tab-content.active {
+    display: block;
+}
+
+.tab-button:hover
+{
+    text-decoration: underline;
+    background-color: white;
+}
+
+.tab-button:active
+{
+    border-bottom: none;
+}
+
+/*review*/
+.neeeme
+{
+    border-bottom: solid 1px #ccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+/*off canvas*/
+.ofcan a:hover
+{
+    color: #b13b56;
+}
+
+/*sell*/
+.sell h3
+{
+    color: #d43786;
+}
+
+.selface
+{
+    color: #d43786;
+}
+
+/* Modal gift card*/
+
+.modalg {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-contentg {
+    background-color: #fefefe;
+    margin: 50px auto;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0px 0px 10px #888;
+}
+
+.modal-contentg img
+{
+    height: 40vh;
+    width: 37vw;
+}
+
+.modal-contentg h3
+{
+    color: #d43786;
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(55, 52, 226);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*off canvas links*/
+.sett a
+{
+    color: #000000;
+}
+
+.sett a:hover
+{
+    color: #d43786;
+}
+
+/*settings*/
+.setf
+{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(85, 84, 84);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.mmmenu a
+{
+    color: #000000;
+}
+
+.dropdown .btn-link
+{
+    color: white;
+    text-decoration: none;
+    padding: 0%;
+}
+
+.dpnav .btn-link
+{
+    color: #000000;
+}
+
+.shopcitie h5
+{
+    color: #d43786;
+    margin-top: 30vh;
+}
+
+.carti ul li
+{
+    margin-bottom: 5vh;
+    border-bottom: dotted 1px rgb(179, 177, 177);
+    padding: 10px;
+}
+
+.remove-button {
+    background-color: #f72056; /* Change the background color */
+    color: #ffffff; /* Change the text color */
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    /* Add any other styles you want */
+  }
+
+  .carti img
+  {
+    height: 20vh;
+    width: 10vw;
+  }
+
+.about
+{
+    font-size: 0.9rem;
+}
+
+.aboutus
+{
+    margin: 4vh;
+}

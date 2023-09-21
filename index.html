@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Siesta-Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="images/3668861_clothes_fashion_tshirt_icon.png">
+        <link rel="stylesheet" href="css/siestaindex.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+                myModal.show();
+            });
+        </script>
+        
+    </head>
+
+    <body>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            const openGiftCardPopup = document.getElementById("openGiftCardPopup");
+            const giftCardPopup = document.getElementById("giftCardPopup");
+            const closeGiftCardPopup = document.getElementById("closeGiftCardPopup");
+
+            openGiftCardPopup.addEventListener("click", function () {
+            giftCardPopup.style.display = "block";
+            });
+
+            closeGiftCardPopup.addEventListener("click", function () {
+            giftCardPopup.style.display = "none";
+            });
+
+            window.addEventListener("click", function (event) {
+            if (event.target === giftCardPopup) {
+            giftCardPopup.style.display = "none";
+            }
+            });
+            });
+
+            //giftcard
+            function giftcard()
+            {
+                alert("Discount Applied");
+            }
+
+            //buy now modal
+            function showBuyNowModal() {
+            var modal = document.getElementById('buyNowModal');
+            modal.classList.add('show');
+            modal.style.display = 'block';
+            modal.setAttribute('aria-modal', 'true');
+            modal.removeAttribute('aria-hidden');
+
+            var modalBackdrop = document.createElement('div');
+            modalBackdrop.classList.add('modal-backdrop', 'fade', 'show');
+            document.body.appendChild(modalBackdrop);
+    
+            modal.querySelector('.btn-close').addEventListener('click', hideBuyNowModal);
+            modal.querySelector('.btn-secondary').addEventListener('click', hideBuyNowModal);
+            }
+
+            function hideBuyNowModal() {
+            var modal = document.getElementById('buyNowModal');
+            modal.classList.remove('show');
+            modal.style.display = 'none';
+            modal.setAttribute('aria-modal', 'false');
+            modal.setAttribute('aria-hidden', 'true');
+
+            var modalBackdrop = document.querySelector('.modal-backdrop');
+            document.body.removeChild(modalBackdrop);
+            }
+
+        </script>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content pink">
+                    
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="images/welcome.jpg"/>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+        <script>
+        
+        </script>
+
+        <div class="container-fluid">
+
+            <header>
+            <nav class="navbar navbar-expand-lg navbar-custom ">
+                <div>
+                    <a class="navbar-brand ms-5" href="index.html">
+                        <img src="images/logo585-removebg-preview-removebg-preview.png" width="215" height="65"/>
+                    </a>
+                </div>
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto  navlinks">
+                      <li class="nav-item ms-4 me-3">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item ms-4">
+                        <a class="nav-link active" href="shop.html">Shop</a>
+                      </li>
+                      
+                      
+                      <li class="nav-item ms-4">
+                        <a class="nav-link active" href="reviews.html">Reviews</a>
+                      </li>
+                      <li class="nav-item ms-4">
+                        <a class="nav-link active" href="#concon">Contact</a>
+                      </li>
+                    </ul>
+
+                   
+
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search Latest Clothes" aria-label="Search">
+                      <button class="btn btn-outline-danger ms-4" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+            </nav>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <div class="offcanvas-title" id="offcanvasExampleLabel"><img src="images/logo585-removebg-preview-removebg-preview.png" width="215" height="65"/></div>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <p>Join us today to get Email alerts about latest sales!</p>
+                    </div>
+
+                    <div class="mt-3 sett">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="register.html">Sign-Up</a></li>
+                            <li class="list-group-item"><a href="profile.html">Profile</a></li>
+                            <li class="list-group-item"><a href="settings.html">Settings</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-3">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#"></a><h5><b>Shop By catergories</b></h5></li>
+                            <li class="list-group-item"><a href="women.html"></a>Women</li>
+                            <li class="list-group-item"><a href="men.html"></a>Men</li>
+                            <li class="list-group-item"><a href="kids.html"></a>Kids</li>
+                            <li class="list-group-item"><a href="tradwom.html"></a>Women's Traditional</li>
+                            <li class="list-group-item"><a href="tradmen.html"></a>Men's Traditional</li>
+                            <li class="list-group-item"><a href="fashacc.html"></a>Fashion Accessories</li>
+                            <li class="list-group-item"><a href="bbycare.html"></a>Baby Care</li>
+                            <li class="list-group-item"><a href="softtt.html"></a>Soft Toys</li>
+                            <li class="list-group-item"><a href="beauty.html"></a>Beauty</li>
+                            <li class="list-group-item"><a href="grocc.html"></a>Groceries</li>
+                        </ul>
+                    </div>
+                                             
+                </div>
+              </div>
+
+              <div class="panel">
+                <div class="panel-all">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <img src="images/chevron_right_FILL0_wght400_GRAD0_opsz48-removebg-preview.png" width="40" height="30"/>
+                        All
+                    </a>
+                </div>
+            
+                <div class="panel-ops ppan">
+                    <p class="me-4"><a href="#tdeals">Today's Deals</a></p>
+                    <p class="me-4"><a href="customerservice.html">Customer Service</a></p>    
+                    <p class="me-4"><a href="#" id="openGiftCardPopup">Gift Cards</a></p>  
+                    <p class="me-4"><a href="sell.html">Sell</a></p>
+                </div>
+
+                <div class="panel-ops me-4">
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                        </button>
+                        <div class="dropdown-menu mmmenu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="women.html">Women</a>
+                            <a class="dropdown-item" href="men.html">Men</a>
+                            <a class="dropdown-item" href="kids.html">Kids</a>
+                            <a class="dropdown-item" href="tradwom.html">Women's Traditional</a>
+                            <a class="dropdown-item" href="tradmen.html">Men's Traditional</a>
+                            <a class="dropdown-item" href="fashacc.html">Fashion Accessories</a>
+                            <a class="dropdown-item" href="bbycare.html">Baby Care</a>
+                            <a class="dropdown-item" href="softtt.html">Soft Toys</a>
+                            <a class="dropdown-item" href="beauty.html">Beauty</a>
+                            <a class="dropdown-item" href="grocc.html">Groceries</a>
+                        </div>
+                    </div>
+                </div>      
+                
+                <div class="panel-deals login">
+                    <a href="login.html">Login</a>
+                </div>
+            
+                <div class="panel-deals ">
+                    <a href="register.html" class="btn btn-danger rounded-pill">Sign Up</a>
+                </div>
+            
+                <div>
+                    <p style="margin-top: 3vh;">|</p>
+                </div>
+            
+                <div class="cartsi">
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            </header>
+
+            <div class="modalg" id="giftCardPopup">
+                <div class="modal-contentg">
+                    <span class="close" id="closeGiftCardPopup">&times;</span>
+                    <div class="row">
+                        <div class="col-md-3 text-center mt-5">
+                            <h3>Gift Card</h3>
+                            <p>This card has been unlocked for you!</p>
+                            <botton type="button" class="btn btn-danger" onclick="giftcard()">Claim</botton>
+                        </div>
+                        <div class="col-md-9">
+                            <img src="images/giftcard20.jpg" alt="giftcart20%off"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-contentg">
+                    <span class="close" id="closeGiftCardPopup">&times;</span>
+                    <div class="row">
+                        <div class="col-md-3 text-center mt-5">
+                            <h3>Gift Card</h3>
+                            <p>Sign-Up to unlock this gift card.</p>
+                            <a href="register.html" class="btn btn-danger">Sign-Up</a>
+                        </div>
+                        <div class="col-md-9">
+                            <img src="images/giftcard50 (1).jpg" alt="giftcart50%off"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <article>
+                <section>
+              <div id="myCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/lollllltyyi.jpg" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Amazon-Fashion-Sales.jpg" class="d-block w-100" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Social-Cover-173.jpg" class="d-block w-100" alt="Image 3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+                </div>
+                </section>    
+            
+                <section class="deals" id="tdeals">
+                    <div class="container-fluid bg-white text-dark rounded-4 p-5 mt-5">
+                        <div class="row" id="product-list">
+                            <div class="col divwithwritten">
+                                <p class="written"><h4>Today's Deals</h4></p>
+                            </div>
+                            <div class="col">
+                                <a>
+                                    <div class="card" style="width: 12rem;">
+                                        <img src="images/Special Kurti.jpeg" class="card-img-top" alt="Kurti">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Special Kurti</h5>
+                                          <p class="card-text">Women's Designer Kurti</p>
+                                          <p id="womkurt"><b>₹1200</b></p>
+                                          <p>50% off</p>
+                                          <a href="#" class="btn btn-danger" onclick="showBuyNowModal()">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a>
+                                    <div class="card" style="width: 12rem;">
+                                        <img src="images/Men's Kurta.jpeg" class="card-img-top" alt="Kurta">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Men's Kurta</h5>
+                                          <p class="card-text">Special Designed Kurta</p>
+                                          <p id="kurt"><b>₹1000</b></p>
+                                          <p>45% off</p>
+                                          <a href="#" class="btn btn-danger" onclick="showBuyNowModal()">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a>
+                                    <div class="card" style="width: 12rem;">
+                                        <img src="images/earrings.jpeg" class="card-img-top" alt="earrings">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Earrings</h5>
+                                          <p class="card-text">Women's Silver Earrings</p>
+                                          <p id="ears"><b>₹500</b></p>
+                                          <p>20% off</p>
+                                          <a href="#" class="btn btn-danger" onclick="showBuyNowModal()">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a>
+                                    <div class="card" style="width: 12rem;">
+                                        <img src="images/watch.jpeg" class="card-img-top" alt="watch">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Men's Watch</h5>
+                                          <p class="card-text">Men's Digital Watch Black</p>
+                                          <p id="watchy"><b>₹800</b></p>
+                                          <p>26% off</p>
+                                          <a href="#" class="btn btn-danger" onclick="showBuyNowModal()">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="buyNowModal" tabindex="-1" aria-labelledby="buyNowModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header checkk">
+                                    <h5 class="modal-title" id="buyNowModalLabel"><b>Purchase Confirmation</b></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Proceed to checkout
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" id="checkout-btn" class="btn btn-danger" onclick="showCheckoutModal()">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="buyNowModalLabel" aria-hidden="true">
+                        <div class="popup-content w-50">
+                            <span class="close" id="closePopup">&times;</span>
+                            <img src="images/thankyou.jpeg" alt="thankyou"/>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="container-fluid bg-white text-dark rounded-4 p-5 mt-5 mb-5">
+                        <div class="text-center mb-4" id="categ">
+                            <p><h5>Shop By Categories</h5></p>
+                        </div>
+                        <div class="row categrow">
+                                <div class="col-md-2 mx-2">
+                                    <a href="women.html">
+                                    <div class="text-center image-box">
+                                        <img src="images/siesta_women.jpg" class="" alt="women's fashion">
+                                        <p class="">Women</p>
+                                    </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-md-2 mx-2">
+                                    <a href="men.html">
+                                    <div class="text-center image-box">
+                                        <img src="images/siesta_men2.jpg" class="" alt="men's fashion">
+                                        <p class="">Men</p>
+                                    </div>
+                                    </a>
+                                </div>
+
+                            <div class="col-md-2 mx-2">
+                                <a href="kids.html">
+                                <div class="text-center image-box">
+                                    <img src="images/siesta_kids.jpg" class="" alt="kid's fashion">
+                                    <p class="">Kids</p>
+                                </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-2 mx-2">
+                                <a href="bbycare.html">
+                                <div class="text-center image-box">
+                                    <img src="images/babycare.jpg" class="" alt="baby care">
+                                    <p class="">Baby Care</p>
+                                </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-2 mx-2">
+                                <a href="grocc.html">
+                                <div class="text-center image-box">
+                                    <img src="images/groceries.jpg" class="" alt="groceries">
+                                    <p class="">Groceries</p>
+                                </div>
+                                </a>
+                            </div>
+                        
+                        </div>
+
+                        <div class="row categrow">
+                            <div class="col-md-2 mx-2">
+                                <a href="tradwom.html">
+                                <div class="text-center image-box">
+                                    <img src="images/siesta_womens_trad.jpg" class="" alt="women's traditional">
+                                    <p class="">Women's Traditional</p>
+                                </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-2 mx-2">
+                                <a href="tradmen.html">
+                                <div class="text-center image-box">
+                                    <img src="images/siesta_men_trad.jpg" class="" alt="men's traditional">
+                                    <p class="">Men's Traditional Wear</p>
+                                </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-2 mx-2">
+                                <a href="fashacc.html">
+                                <div class="text-center image-box">
+                                    <img src="images/siesta_mens_acces.jpg" class="" alt="Accessories">
+                                    <p class="">Fashion Accessories</p>
+                                </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-2 mx-2">
+                                <a href="softtt.html">
+                                <div class="text-center image-box">
+                                    <img src="images/avosoft.jpg" class="" alt="Toys">
+                                    <p class="">Soft Toys</p>
+                                </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-2 mx-2">
+                                <a href="beauty.html">
+                                <div class="text-center image-box">
+                                    <img src="images/beauty.jpg" class="" alt="Beauty">
+                                    <p class="">Beauty and Cosmetics</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <footer>
+                <div class="footer-content">
+                    
+                    <div class="footer-section-one">
+                        <ul>
+                              <li><h5>Shop</h5></li>
+                              <li><a href="men.html">Men's Fashion</a></li>
+                              <li><a href="women.html">Women's Fashion</a></li>
+                              <li><a href="fashacc.html">Accessories</a></li>
+                              <li><a href="shop.html">Others</a></li>
+                                  
+                        </ul>
+                    </div>
+                    <div class="footer-section-one" id="concon">
+                      <ul>
+                        <li><h5>Contact Us</h5></li>
+                        <li><a href="mailto:hidsaanmajeed427226@gmail.com?subject=web%20siesta"><i class="fa-solid fa-envelope emailicon"></i>Email Us</a></li>
+                        <li><a href="tel:+918899184950"><i class="fa-solid fa-phone emailicon"></i>Call Us</a></li>
+                    </ul>
+                    </div>
+  
+                    <div class="footer-section-one">
+                          <ul>
+                              <li><h5>Support Us</h5></li>
+                              <li><a href="donate.html"><i class="fa-solid fa-circle-dollar-to-slot emailicon"></i>Donate to help us grow!</a></li>
+                          </ul>
+                    </div>
+
+                  <div class="footer-section">
+                    <h5>Follow Us</h5>
+                    <ul>
+                      <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                      <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+                      <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
+                      <li><a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp fa-xl"></i></a></li>
+                    </ul>
+          
+                  </div>
+                   
+                </div>
+
+                <div class="text-center aboutus">
+                    <h6><b>About Us</b></h6>
+                    <p class="about">Welcome to Siesta, your one-stop destination for high-quality products that suit your style and needs. With a passion for excellence and a commitment to delivering the best, we take pride in offering a diverse range of products that cater to every aspect of your life.</p>
+                </div>
+               
+              <div class="footer-bottom">
+                  <p>&copy; 2023 Siesta. All rights reserved.</p>
+              </div>
+          </footer>
+        </div>
+
+        <script>
+            function showCheckoutModal() {
+            var modal = document.getElementById('checkoutModal');
+            modal.classList.add('show');
+            modal.style.display = 'block';
+            modal.setAttribute('aria-modal', 'true');
+            modal.removeAttribute('aria-hidden');
+
+            var modalBackdrop = document.createElement('div');
+            modalBackdrop.classList.add('modal-backdrop', 'fade', 'show');
+            document.body.appendChild(modalBackdrop);
+
+            modal.querySelector('.close').addEventListener('click', hideCheckoutModal);
+            modal.querySelector('.btn-secondary').addEventListener('click', hideCheckoutModal);
+            modal.querySelector('#checkout-btn').addEventListener('click', handleCheckout);
+            }
+
+            function hideCheckoutModal() {
+            var modal = document.getElementById('checkoutModal');
+            modal.classList.remove('show');
+            modal.style.display = 'none';
+            modal.setAttribute('aria-modal', 'false');
+            modal.setAttribute('aria-hidden', 'true');
+
+            var modalBackdrop = document.querySelector('.modal-backdrop');
+            document.body.removeChild(modalBackdrop);
+            }
+
+            function handleCheckout() {
+            // Perform checkout logic here
+            alert('Checkout successful!');
+            hideCheckoutModal();
+            }
+        </script>
+        
+    </body>
+</html>
